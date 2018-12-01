@@ -1,0 +1,51 @@
+{
+  "pages": [
+      "pages/login/login",
+    "pages/product/product",
+ 
+    "pages/cart/cart",
+    "pages/details/details",
+    "pages/home/home",
+   
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "浔华展示",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "rgb(25, 158, 235)",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/首页.png",
+        "selectedIconPath": "static/首页active.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "全部商品",
+        "iconPath": "static/all.png",
+        "selectedIconPath": "static/allactive.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "static/购物车(1).png",
+        "selectedIconPath": "static/购物车active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人",
+        "iconPath": "static/我的.png",
+        "selectedIconPath": "static/我的active.png"
+      }
+    ]
+  }
+}

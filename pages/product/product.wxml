@@ -1,0 +1,41 @@
+<view class="header">
+  <view class="fl">
+    <image src="http://127.0.0.1:3002/img/fl1.png" class="fl1" lazy-load model="asspectFill"></image>
+    <text>分类</text>
+  </view>
+    
+  <view class="input">
+    <image src="http://127.0.0.1:3002/img/fdj.png" lazy-load model="asspectFill"></image>
+    <input type="text" placeholder="请输入搜索的商品" value='{{kwords}}'  bindconfirm="search"/>
+  </view> 
+  <view class="list">
+    <image src="http://127.0.0.1:3002/img/fl2.png" class="fl2" lazy-load model="asspectFill"></image>
+    <text>列表</text>
+  </view>
+   
+</view>
+<view class="sx">
+    <text>综合</text>
+    <text>销量</text>
+    <text>新品</text>
+    <view>
+      <text>价格</text>
+      <image src="http://127.0.0.1:3002/img/上箭头.png"></image>
+      <image src="http://127.0.0.1:3002/img/下箭头.png"></image>
+    </view>
+</view>
+<view class="goodsList">
+   <ul>
+      <li wx:for="{{list}}" id='{{item.pid}}' bindtap="ToDetail">
+         <image src="{{item.pic}}" class="goods_img" lazy-load model="asspectFill"></image>
+         <text>{{item.title}}</text>
+         <view class="aa">
+            <text>{{item.price}}</text>
+            <image src="http://127.0.0.1:3002/img/购物车.png" catchtap='addCart' id="{{item.pid}}"></image>
+         </view>
+         
+      </li>
+     
+   </ul>
+</view>
+<view class="nogood" hidden='{{hh}}'>{{nogood}}</view>

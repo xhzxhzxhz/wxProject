@@ -1,0 +1,97 @@
+<view  class="slider" bindtap='size_hide'>
+  <swiper autoplay interval="3500" indicator-dots>
+    <block wx:for="{{swiper}}">
+    <swiper-item>
+      <image src="{{item}}" mode="aspectFill" lazy-load></image>
+    </swiper-item> 
+    </block>
+  </swiper>
+</view>
+
+<view class="info" wx:for='{{list}}'>
+  <view class="left">
+    <text class="title">{{item.title}}</text>
+    <view>
+      <text>销售价：{{item.price}}</text>
+    </view>
+  </view>
+  <view class="right">
+    <image src="http://127.0.0.1:3002/img/分享.png"></image>
+    <view>销量：1件</view>
+  </view>
+</view>
+<view class="divid"></view>
+<view class="size" bindtap='select_size'>
+  <text>请选择 尺寸数量</text>
+  <image src="http://127.0.0.1:3002/img/right.png"></image>
+</view>
+<view class="divid"></view>
+<view class="details">
+  <view class="tj">
+    <text>图文详情</text>
+  </view>
+  <view class="js">
+    <view>品牌： <text>木慕</text>； </view> 
+    <view>产地： <text>广州</text>； </view> 
+    <view>材质： <text>黑白铁管烤漆</text> ；</view> 
+    <view>配送： <text>下单45天后，配送</text> ；</view> 
+  </view> 
+  <view wx:for='{{imgs}}' class="img">
+    <image src="{{item}}"></image>
+  </view>
+</view>
+<!--选择规格弹框-->
+<view class='gray'  hidden='{{size_show}}'>
+  <view class="gray_top" bindtap='size_hide'></view>
+  <view class="select_size">
+  <image src="{{small_img}}"></image>
+  <view class="info_price">
+     <view>￥650.00-￥980.00</view>
+     <view>库存8件</view>
+     <view>请选择 颜色 尺寸</view>
+  </view>
+  <view class="guige">
+    <view class="color">
+      <view>颜色</view>
+      <text style="{{cindex==index?'border-color:rgb(64, 197, 250)':''}}" wx:for='{{color}}' data-id="{{item.id}}" data-current='{{index}}' bindtap='clickColor'>{{item.c}}</text>
+    </view>
+    <view class="size1">
+      <view>尺寸</view>
+      <text style="{{sindex==index?'border-color:rgb(64, 197, 250)':''}}" wx:for='{{size}}' data-id="{{item.id}}" data-current='{{index}}' bindtap='clickSize'>{{item.s}}</text>
+    </view>
+  </view>
+  <view class="num">
+      <text>数量</text>
+      <view  class="add_muls">
+          <text bindtap='bindMinus'>-</text>
+          <text>{{num}}</text>
+          <text bindtap='bindPlus'>+</text>
+      </view>
+  </view>
+  <view class="select_bottom">
+      <text bindtap='addCart' wx:for='{{list}}' id="{{item.pid}}">加入购物车</text>
+      <text bindtap='addCart' wx:for='{{list}}' id="{{item.pid}}">立即购买</text>
+  </view>
+</view>
+
+
+</view>
+
+<view class="bottom">
+  <view bindtap='toProfile'>
+      <image src="http://127.0.0.1:3002/img/我的.png"></image>
+      <view>我的</view>
+  </view>
+  <view bindtap='toCart'>
+      <image src="http://127.0.0.1:3002/img/购物车(1).png"></image>
+      <view>购物车</view>
+  </view>
+  <view class="v3">
+      <image src="http://127.0.0.1:3002/img/首页.png"></image>
+      <view>店铺</view>
+  </view>
+  <text class="add" bindtap='addCart' wx:for='{{list}}' id="{{item.pid}}" bindtap='select_size'>加入购物车</text>
+  <text class="shop" bindtap='select_size'>立即购买</text>
+</view>
+
+

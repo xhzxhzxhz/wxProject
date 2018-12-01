@@ -1,0 +1,115 @@
+<view class="tx">
+  <view class="txx">
+    <image src="{{info[0].avatarUrl}}"></image>
+  </view>
+  <view class="name">
+    <text>{{info[0].nickName}}</text>
+    <image src="http://127.0.0.1:3002/img/pfl.png" class="img1"></image>
+  </view>
+</view>
+
+<view class="body">
+  <view class="body-title">
+    <text>全部订单</text>
+    <view class="right">
+      <text>查看全部订单</text>
+      <image src="http://127.0.0.1:3002/img/right.png" class="iright"></image>
+    </view>
+    
+  </view>
+  <view class="step">
+    <view>
+      <image src="http://127.0.0.1:3002/img/待付款.png"></image>
+      <view>待支付</view>
+    </view>
+     <view>
+      <image src="http://127.0.0.1:3002/img/待发货.png"></image>
+      <view>待发货</view>
+    </view>
+     <view>
+      <image src="http://127.0.0.1:3002/img/待收货.png"></image>
+      <view>待收货</view>
+    </view>
+     <view>
+      <image src="http://127.0.0.1:3002/img/待评价.png"></image>
+      <view>待评价</view>
+    </view>
+     <view>
+      <image src="http://127.0.0.1:3002/img/维权 .png"></image>
+      <view>维权</view>
+    </view>
+  </view>
+  <view class="divide"></view>
+  <view class="content">
+    <view class="content-item">
+      <view class="left">
+        <image src="http://127.0.0.1:3002/img/钱包.png" class="iright"></image>
+        <text>我的余额</text>
+      </view>
+      <view class="right">
+        <text>0</text>
+        <image src="http://127.0.0.1:3002/img/right.png" class="iright"></image>
+      </view>
+    </view>
+     <view class="content-item">
+      <view class="left">
+        <image src="http://127.0.0.1:3002/img/积分.png" class="iright"></image>
+        <text>我的积分</text>
+      </view>
+      <view class="right">
+        <text>0</text>
+        <image src="http://127.0.0.1:3002/img/right.png" class="iright"></image>
+      </view>
+    </view>
+     <view class="content-item">
+      <view class="left">
+        <image src="http://127.0.0.1:3002/img/优惠券.png" class="iright"></image>
+        <text>我的优惠券</text>
+      </view>
+      <view class="right">
+        <text>0</text>
+        <image src="http://127.0.0.1:3002/img/right.png" class="iright"></image>
+      </view>
+    </view>
+    <view class="content-item">
+      <view class="left">
+        <image src="http://127.0.0.1:3002/img/砍价.png" class="iright"></image>
+        <text>砍价</text>
+      </view>
+      <view class="right">
+        <text>0</text>
+        <image src="http://127.0.0.1:3002/img/right.png" class="iright"></image>
+      </view>
+    </view>
+    <view class="content-item">
+      <view class="left">
+        <image src="http://127.0.0.1:3002/img/推荐.png" class="iright"></image>
+        <text>推荐</text>
+      </view>
+      <view class="right">
+        <text>0</text>
+        <image src="http://127.0.0.1:3002/img/right.png" class="iright"></image>
+      </view>
+    </view>
+    <view class="content-item">
+      <view class="left">
+        <image src="http://127.0.0.1:3002/img/我的.png" class="iright"></image>
+        <text>个人信息</text>
+      </view>
+      <view class="right">
+        <text>0</text>
+        <image src="http://127.0.0.1:3002/img/right.png" class="iright"></image>
+      </view>
+    </view>
+    <view class="content-item">
+      <view class="left">
+        <image src="http://127.0.0.1:3002/img/收货地址.png" class="iright"></image>
+        <text>收货地址</text>
+      </view>
+      <view class="right">
+        <text>0</text>
+        <image src="http://127.0.0.1:3002/img/right.png" class="iright"></image>
+      </view>
+    </view>
+  </view>
+</view> 

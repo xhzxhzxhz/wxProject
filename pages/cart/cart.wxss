@@ -1,0 +1,168 @@
+.goodsList{
+  margin:0 auto;
+  width:700rpx;
+}
+.goodsList ul li{
+  display: block;
+  width:48%;
+  height:450rpx;
+  margin-right:10rpx;
+  float: left;
+
+}
+.goodsList ul li image{
+  width:100%;
+  height:300rpx;
+}
+.goodsList ul li text{
+  color:#000;
+  font-size: 27rpx;
+}
+.goodsList ul li .aa>text{
+  color:rgb(25, 158, 235);
+  font-size: 24rpx;
+}
+.goodsList ul li .aa>image{
+  width:45rpx;
+  height:45rpx;
+  float:right;
+  margin-right:20rpx;
+}
+.aa{
+  margin-top:10px;
+}
+.cart_null{
+  width:100%;
+  height:300rpx;
+  text-align: center;
+}
+.cart_null image{
+  width:150rpx;
+  height:150rpx;
+  border:1px solid rgb(59, 57, 57);
+  border-radius: 50%;
+}
+.cart_null text{
+  display: block;
+  width:100rpx;
+  font-size:27rpx;
+  padding:10rpx 10rpx;
+  color:#fff;
+  background: rgb(23, 122, 236);
+  margin:0 auto;
+  margin-top:20rpx;
+}
+.tj{
+  font-size:27rpx;
+  text-align:center;
+  border-top:1px solid #aaa;
+  position: relative;
+  width:96%;
+  margin:0 auto;
+}
+.tj text{
+  position: absolute;
+  top:-15rpx;
+  width:150rpx;
+  background:#fff;
+  right:294rpx;
+  color:#aaa;
+}
+
+.have_goods ul li checkbox{
+  border:1px solid #aaa;
+  border-radius: 50%;
+  width:30rpx;
+  height:30rpx;
+}
+.my-list{
+  display: flex;
+  justify-content: flex-start;
+  width:100%;
+}
+.have_goods>view>view:first-child{
+  border-top:1rpx solid #aaa; 
+}
+.my-pic{
+  width:130rpx;
+  height:150rpx;
+  margin-left:100rpx;
+}
+.my-title{
+  font-size:27rpx;
+}
+.my-txt{
+  font-size:23rpx;
+}
+.gay{
+  font-size:23rpx;
+  color:rgb(23, 122, 236);
+}
+.my-bnt{
+  width:150rpx;
+  height:37rpx;
+  font-size:27rpx;
+  display: flex;
+  justify-content: space-around;
+  position:relative;
+  right:-266rpx;
+  border:1rpx solid #aaa;
+}
+.carts-item{
+  border-bottom:1px solid #ddd;
+}
+.my-right{
+  margin-left:-270rpx;
+  margin-top:82rpx;
+}
+.bnt{
+  display: inline-block;
+  width:37rpx;
+  height: 37rpx;
+  padding:0 11rpx;
+
+}
+.btn1{
+  border-right:1px solid #aaa;
+}
+.btn2{
+  border-left:1px solid #aaa;
+}
+.int{
+  width:37rpx;
+  height: 100%;
+  margin:0 10rpx;
+  text-align: center;
+}
+.bottom{
+  width:100%;
+  font-size:27rpx;
+  display:flex;
+  justify-content: space-between;
+  border:1px solid #aaa;
+  padding:0 10rpx;
+  height:100rpx;
+  text-align: center;
+  position: fixed;
+  bottom:0rpx;
+}
+.my-bnts{
+  width:150rpx;
+  background: #3EA9E1;
+  color:#fff;
+  padding:30rpx 10rpx;
+  height: 100%;
+}
+.my-check{
+  margin-top:50rpx;
+  margin-left:20rpx;
+}
+.my-sel{
+  margin-top:20rpx;
+}
+.my-count{
+  margin-top:20rpx;
+}
+.my-left{
+  padding:20rpx;
+}
